@@ -1,6 +1,6 @@
 # Anonymous Reproducibility Package
 
-This repository provides an anonymized reproducibility package for a double-blind submission on resolution-controlled UAV detection and deployment-time routing.
+This repository provides an anonymized reproducibility package for a double-blind submission on deployment-time routing for vision pipelines.
 
 ## Contents
 
