@@ -1,0 +1,55 @@
+{
+  "gpu_info": {
+    "torch_version": "2.12.0.dev20260408+cu128",
+    "cuda_version": "12.8",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "gpu_total_memory_gb": 8.55,
+    "gpu_compute_capability": "12.0",
+    "gpu_multiprocessor_count": 26
+  },
+  "config": {
+    "warmup": 10,
+    "runs": 30,
+    "image": "visdrone_sample.jpg",
+    "image_shape": [
+      1530,
+      2720,
+      3
+    ]
+  },
+  "sr_model_params_millions": 1.301,
+  "latency_ms": {
+    "sr_model_only": {
+      "mean": 124.33,
+      "std": 0.67
+    },
+    "sr_model_plus_tensor_to_bgr": {
+      "mean": 189.41,
+      "std": 3.06
+    },
+    "detector_lr_640": {
+      "mean": 14.87,
+      "std": 1.26
+    },
+    "detector_lr_1280": {
+      "mean": 41.22,
+      "std": 0.99
+    },
+    "detector_sr_1280": {
+      "mean": 228.91,
+      "std": 4.39
+    },
+    "end_to_end_sr_pipeline_1280": {
+      "mean": 233.57,
+      "std": 6.79
+    }
+  },
+  "derived": {
+    "sr_pipeline_overhead_vs_lr_640_ms": 218.71,
+    "sr_pipeline_overhead_vs_lr_1280_ms": 192.35,
+    "tensor_conversion_overhead_ms": 65.08,
+    "ratio_sr_pipeline_to_lr_640": 15.71,
+    "ratio_sr_pipeline_to_lr_1280": 5.67
+  }
+}
